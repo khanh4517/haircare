@@ -17,7 +17,7 @@
     />
     <script src="js/bootstrap.bundle.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>HairCare</title>
+    <title>Blog News</title>
   </head>
 
   <body>
@@ -138,7 +138,7 @@
                   alt="image"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">What is hair loss</h5>
+                  <h5 class="card-title">What is hair loss?</h5>
                   <p class="card-text">
                     Hair loss can appear in many different ways, depending on
                     what's causing it. It can come on suddenly or gradually and
@@ -167,9 +167,7 @@
                   </h5>
                   <p class="card-text">
                     It is normal for hair color to change, as people age. But
-                    white hair can appear at almost any time in life. Even
-                    teenagers and people in their 20s may notice strands of
-                    white hair.
+                    white hair can appear at almost any time in life...
                   </p>
                   <br />
                   <a
@@ -214,9 +212,7 @@
                   <h5 class="card-title">10 Best Ways to Boost Hair Growth</h5>
                   <p class="card-text">
                     You might be wondering if there’s anything you can do to
-                    make your hair grow faster. Do any products help? Can
-                    dietary changes speed up growth? And what about medications
-                    or treatments?
+                    make your hair grow faster.... 
                   </p>
                   <br />
                   <a
@@ -303,6 +299,27 @@
           © 2021 Copyright: Group 3
         </div>
       </footer>
+      <div class="scroll-to-top scroll-to-target" style="display: block;">
+        <img src="images/scroll to top.png" alt="">
+       </div>
+       <script>
+            var offset = 200;
+       var duration = 500;
+       $(window).scroll(function () {
+           if ($(this).scrollTop() > offset) {
+               $('.scroll-to-top').fadeIn(400);
+           } else {
+               $('.scroll-to-top').fadeOut(400);
+           }
+       });
+       $('.scroll-to-top').click(function (event) {
+           event.preventDefault();
+           $('html, body').animate({
+               scrollTop: 0
+           }, 600);
+           return false;
+       });
+       </script>
     </div>
   </body>
 </html>

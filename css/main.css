@@ -72,7 +72,7 @@ img {
     width: 100%;
   }
   .header_menu_item {
-	  width: 100%;
+    width: 100%;
     margin-left: auto;
   }
 }
@@ -98,6 +98,7 @@ img {
   }
   .carousel-img {
     width: 100%;
+    height: auto;
   }
 }
 /* New Product */
@@ -149,85 +150,37 @@ img {
 }
 
 /******************  News  *******************/
+.card {
+  margin: 30px 0;
+  width: 100%;
+}
 .card-title {
   font-size: 25px;
   font-weight: bold;
 }
-.indam{
-	font-weight: bolder;
-	font-size: 30px;
-}
-.indam1{
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-}
-.indam2{
-	font-weight: bolder;
-	font-family: arial;
-}
-.indam3{
-	font-size: 20px;
-	font-weight: bolder;
-}
-.hinhblognew{
-	padding-top: 150px;
-}
-.hinhblognew1{
-	padding-top: 40px;
-}
-.card-title{
-  font-size: 25px;
+.text-bold {
   font-weight: bold;
 }
-.hairwhite{
-	font-size: 40px;
-	font-weight: bolder;
+.blog-header {
+  font-size: 50px;
+  margin: 20px 0;
+  font-weight: bold;
 }
-.hairwhite2{
-	font-family: arial;
+.blog-title {
+  font-size: 35px;
+  margin: 20px;
 }
-.hairwhite3{
-	font-size: 20px;
-	font-weight: bolder;
+.blog-text {
+  font-size: 17px;
+  margin: 15px;
+  line-height: 18px;
+  padding-left: 10px;
 }
-.hinhhairwhite{
-	padding-top:140px;
-}
-.blad4{
-	padding-right: 200px;
-	
-}
-.blad{
-	font-size: 20px;
-	font-weight: bolder;
-}
-.blad5{
-	font-size: 30px;
-	font-weight: bold;
-}
-.bald1{
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-}
-.blad3{
-	font-weight: bolder;
-}
-.blad4{
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-}
-.hairgrow{
-	font-size: 40px;
-	font-weight: bold;
-}
-.hairgrow1{
-	font-size: 30px;
-	font-weight: bolder;
-}
-.hairgrow2{
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-}
-.hairgrow3{
-	font-size:35px;
-	font-weight: bolder;
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+.blog-text-list {
+  list-style-type: disc;
+  font-size: 17px;
+  line-height: 18px;
+  padding-left: 30px;
 }
 
 /*footer*/
@@ -323,17 +276,37 @@ img {
   list-style: disc;
 }
 /* about us */
-.about-header{
+.about-header {
   font-weight: bold;
   font-size: 40px;
   color: #4c96d7;
   margin-bottom: 20px;
 }
-.about-body{
+.about-body {
   font-size: 17px;
   line-height: 18px;
   margin-bottom: 20px;
 }
-.row{
+.row {
   margin-top: 20px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: #5bc0de;
+  border: 1px solid royalblue;
+  text-align: center;
+  z-index: 100;
+  border-radius: 3px;
+  display: none;
+  border-radius: 20px;
+}
+
+.scroll-to-top img {
+  border-radius: 20px;
+  cursor: pointer;
 }

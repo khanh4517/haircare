@@ -17,7 +17,7 @@
     />
     <script src="js/bootstrap.bundle.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>HairCare</title>
+    <title>Products</title>
   </head>
 
   <body>
@@ -591,6 +591,27 @@
           © 2021 Copyright: Group 3
         </div>
       </footer>
+      <div class="scroll-to-top scroll-to-target" style="display: block;">
+        <img src="images/scroll to top.png" alt="">
+       </div>
+       <script>
+            var offset = 200;
+       var duration = 500;
+       $(window).scroll(function () {
+           if ($(this).scrollTop() > offset) {
+               $('.scroll-to-top').fadeIn(400);
+           } else {
+               $('.scroll-to-top').fadeOut(400);
+           }
+       });
+       $('.scroll-to-top').click(function (event) {
+           event.preventDefault();
+           $('html, body').animate({
+               scrollTop: 0
+           }, 600);
+           return false;
+       });
+       </script>
     </div>
   </body>
 </html>
